@@ -1,4 +1,4 @@
-package ratelimiteralgo;
+package main.java.ratelimiteralgo;
 
 import java.time.Instant;
 

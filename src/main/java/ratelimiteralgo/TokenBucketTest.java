@@ -1,4 +1,4 @@
-package ratelimiteralgo;
+package main.java.ratelimiteralgo;
 
 public class TokenBucketTest {
     public static void main(String[] args) throws InterruptedException {
