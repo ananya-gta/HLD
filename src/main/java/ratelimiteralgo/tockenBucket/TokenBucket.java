@@ -1,4 +1,4 @@
-package main.java.ratelimiteralgo;
+package main.java.ratelimiteralgo.tockenBucket;
 
 import java.time.Instant;
 
