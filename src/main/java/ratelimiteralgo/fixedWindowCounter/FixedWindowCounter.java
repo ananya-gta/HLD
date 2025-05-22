@@ -17,7 +17,7 @@ public class FixedWindowCounter {
     public synchronized boolean allowRequests(int windowSizeInSeconds) {
         Instant now = Instant.now();
         System.out.println("current window: " + window);
-        if (now.minusSeconds(windowSizeInSeconds).isBefore(window)) { // are we still inside the current n seconds time window ?
+        if (now.minusSeconds(windowSizeInSeconds).isBefore(window)) { // are we still inside the current time window ?
             // if yes
             if (counter < limit) { // check if counter of the current window is less than the limit of the window,
                 counter++; // also increase the counter

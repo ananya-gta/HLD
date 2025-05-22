@@ -18,7 +18,7 @@ public class SlidingWindowLogs {
     public synchronized boolean allowRequests() {
         long now = Instant.now().toEpochMilli();
 
-        // remove timestamps that ae older than current window
+        // remove timestamps that are older than current window
         while (!queue.isEmpty() && (now - queue.peek()) > windowSizeInMilliseconds) queue.poll();
 
         if (queue.size() < maxRequests ) {
